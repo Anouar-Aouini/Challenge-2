@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Exercice 2</h2>
+  <div>
+    <h3>Name :{{name}}</h3>
+    <h3>Email :{{email}}</h3>
+    <h3>Address :{{address}}</h3>
+    <div *ngIf="show">
+    <h3>Hobbies :</h3>
+    <ul *ngFor="let hobbie of hobbies; let i=index">
+      <li>{{hobbie}}</li>
+      <button class="btn btn-danger" (click)="onDelete(i)">Supprimer</button>
+    </ul>
+    </div>
+    </div>
+    <button class="btn btn-success" (click)="onShow()">{{show ? 'Masquer hobbies' : 'Afficher hobbies'}}</button>
+  </div>
+   <div class="container">
+     <h1>Edit form</h1>
+     <input type="text" class="form-control" [(ngModel)]="name">
+     <h3>Name : {{name}}</h3>
+     <input type="text" class="form-control" [(ngModel)]="email">
+     <h3>Email : {{email}}</h3>
+     <input type="text" class="form-control" [(ngModel)]="address">
+     <h3>Address : {{address}}</h3>
+     <input type="text" class="form-control" [(ngModel)]="hobbies">
+     <h3>{{hobbies}}</h3>
+</div>

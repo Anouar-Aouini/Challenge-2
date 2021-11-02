@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Exercise 3</h1>
+<hr>
+<h2>{{title}}</h2>
+    <div class="container" *ngFor="let article of listeArticles">
+      <fieldset>
+       <legend>Personalia : {{article.titre}}</legend>
+       <h3 for="">Auteur : {{article.auteur}} </h3>
+       <h3 for="">Date : {{article.date}} </h3>
+       <h3 for="">Contenu : {{article.contenu}} </h3>
+      </fieldset>
+    </div>
+</div>

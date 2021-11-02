@@ -1,0 +1,15 @@
+
+<div class="container">
+  <h2>Exercice 1</h2>
+  <div>
+    <input type="number" class="form-control" #inputCircle placeholder="Enter the side vlaue(in cm)">
+    <button class="btn btn-primary" (click)="onCircleArea(inputCircle)">Calculer cercle</button>
+    <h2>For the value {{inputCircle.value}} , The area of the circle is : {{circleArea}} cm<sup>2</sup></h2>
+  </div>
+  <div>
+    <input type="number" class="form-control" #inputSquare placeholder="Enter the radius value(in cm)">
+    <button class="btn btn-success" (click)="onSquareArea(inputSquare)">Calculer carré</button>
+   <h2>For the value {{inputSquare.value}} , The area of the square is : {{squareArea}} cm<sup>2</sup></h2>
+  </div>
+</div>
+<hr>
