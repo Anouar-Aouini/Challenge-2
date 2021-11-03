@@ -1,6 +1,8 @@
-export interface article {
-    titre: string;
-    contenu: string;
-    auteur: string;
-    date: string;
-  }
+export class article {
+  constructor(
+    public titre: string,
+    public contenu: string,
+    public auteur: string,
+    public date: string
+         ){}
+}
